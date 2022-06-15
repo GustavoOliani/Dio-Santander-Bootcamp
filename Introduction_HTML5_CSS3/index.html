@@ -3,28 +3,31 @@
     <head>
         <meta charset = "utf-8">
         <title>Personal Page</title>
+        <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <header>
-            <img src = "https://i.pinimg.com/236x/83/b2/a5/83b2a5013b6a8e040f5b8b3099f8796a.jpg" alt = "A imagem de um personagem">
-            <h1> Nome completo</h1>
+            <img class = "head_image" src = "https://i.pinimg.com/236x/83/b2/a5/83b2a5013b6a8e040f5b8b3099f8796a.jpg" alt = "A imagem de um personagem">
+            <h1 id = "title"> Nome completo</h1>
         </header>
         <section>
             <header>
-                <h2> Posts</h2>
+                <h2 class = "subtitle"> Posts</h2>
             </header>
-            <header>
-                <h3> Post #1</h3>
-                <img src = "https://i.pinimg.com/236x/9a/c8/bf/9ac8bf14f3f9915307bd3e9e84339701.jpg" alt = "Uma imagem mostrando os personagens principaís do mangá Blue Hearts">
-            </header>
-            <p>
-                Aqui vem um texto sobre o assunto do post, podendo conter um 
-                <a href="https://google.com" target = "_blank"> link </a>
-            </p>
+            <article class = "post">
+                <header>
+                    <h3 class = "post_title"> Post #1</h3>
+                    <img class = "post_image" src = "https://i.pinimg.com/236x/9a/c8/bf/9ac8bf14f3f9915307bd3e9e84339701.jpg" alt = "Uma imagem mostrando os personagens principaís do mangá Blue Hearts">
+                </header>
+                <p class = "post_content">
+                    Aqui vem um texto sobre o assunto do post, podendo conter um 
+                    <a href="https://google.com" target = "_blank"> link </a>
+                </p>
+            </article>
         </section>
         <!-- Representar a lista de contatos -->
         <footer> 
-            <ul>
+            <ul class = "contact_list">
                 <li>
                     <a href = "https://mail.google.com/"> e-mail </a>
                 </li>
