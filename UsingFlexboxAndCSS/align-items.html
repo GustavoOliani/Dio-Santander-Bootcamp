@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>strectch</p>
+    <section class="container center stretch">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container center flex-start">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container center flex-end">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container center baseline">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <h1>Column</h1>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>strectch</p>
+    <section class="container center stretch column">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container center flex-start column">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container center flex-end column">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container center baseline column">
+        <div class="item">Te espero no Machine Learning Day!</div>
+        <div class="item">Participe do Machine Learning Day e saiba tudo sobre a carreira mais promissora e que paga os melhores salários na área da tecnologia.</div>
+        <div class="item">Durante o evento, vamos lançar a nova formação do DIO PRO, o Machine Learning Specialist, desenvolvido pelo Prof. Dr. Diego Renan Bruno, pesquisador na área de Machine Learning, Visão Computacional, Robótica Móvel Autônoma e Veículos Robóticos Inteligentes.</div>
+    </section>
+
+    <p> Alinhamento central à tela</p>
+    <section class="container center central">
+        <div class="item">lfaebfaebalbenalbnwldand</div>
+    </section>
+</body>
+</html>
