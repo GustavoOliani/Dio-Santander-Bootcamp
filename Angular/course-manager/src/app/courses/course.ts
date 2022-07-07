@@ -7,9 +7,12 @@ export class Course{
     duration: number;
     rating: number;
     releaseDate: string;
+    description: string;
 
 
-    constructor(id: number, name: string, imageUrl: string, price: number, code: string, duration: number, ration: number, rating: number, releaseDate: string){
+    constructor(id: number, name: string, imageUrl: string, price: number, code: string, duration: number, 
+        ration: number, rating: number, releaseDate: string, description: string){
+
         this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
@@ -18,5 +21,6 @@ export class Course{
         this.duration = duration;
         this.rating = rating;
         this.releaseDate = releaseDate;
+        this.description = description;
     }
 }
